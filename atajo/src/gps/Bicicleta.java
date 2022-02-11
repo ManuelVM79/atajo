@@ -13,11 +13,18 @@ public class Bicicleta {
         String marca = "Orbea";
     }
     
+    public static int longitud ( int [] camino){
+        int sum = 0;
+        for(int i = 0; i < camino.length; i++){
+            sum += camino[i];
+        }
+        return sum;
+    }
     public static String rutaCorta(int [] camino1, int [] camino2, int [] camino3)
     {
-        int sum1 = 0;
-        int sum2 = 0;
-        int sum3 = 0;
+        int sum1 = longitud(camino1);
+        int sum2 = longitud(camino2);
+        int sum3 = longitud(camino3);
         
         for(int i=0; i<camino1.length; i++)
         {
