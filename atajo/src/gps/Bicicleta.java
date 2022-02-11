@@ -26,20 +26,7 @@ public class Bicicleta {
         int sum2 = longitud(camino2);
         int sum3 = longitud(camino3);
         
-        for(int i=0; i<camino1.length; i++)
-        {
-            sum1 += camino1[i];
-        }
         
-        for(int i=0; i<camino2.length; i++)
-        {
-            sum2 += camino2[i];           
-        }
-        
-        for(int i=0; i<camino3.length; i++)
-        {
-            sum3 += camino3[i];
-        }
         if(sum1 < sum2 && sum1 < sum3)
         {
             return "camino 1"; 
